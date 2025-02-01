@@ -71,3 +71,11 @@ body {
     text-align: center;
     margin-top: 13px;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+        touch-action: none;
+        overscroll-behavior: none;
+    }
+}
