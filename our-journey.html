@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website buat ayang</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="our-journey">
+        <i class="bx bx-arrow-back" id="backButton"></i>
+        <p class="our">our journey</p>
+        <i class="bx bx-x" id="closebutton"></i>
+      </div>
+      <div class="background-photo"></div>
+      <div class="profile-picture">
+        <img src="img/kucinggg.jpg" alt="Profile Picture" />
+      </div>
+      <div class="username">@Lorélion</div>
+      <div class="stats">
+        <div class="keterangan">
+          <p class="number">17</p>
+          <p class="ke">post</p>
+        </div>
+        <div class="keterangan">
+          <p class="number">1</p>
+          <p class="ke">following</p>
+        </div>
+        <div class="keterangan">
+          <p class="number">1</p>
+          <p class="ke">followers</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="img-grid">
+          <img src="img-post/1.jpg" alt="post1" onclick="openModal(this)" />
+          <img src="img-post/2.jpg" alt="post2" onclick="openModal(this)" />
+          <img src="img-post/3.jpg" alt="post3" onclick="openModal(this)" />
+          <img src="img-post/4.jpg" alt="post4" onclick="openModal(this)" />
+          <img src="img-post/5.jpg" alt="post5" onclick="openModal(this)" />
+          <img src="img-post/6.jpg" alt="post6" onclick="openModal(this)" />
+          <img src="img-post/7.jpg" alt="post7" onclick="openModal(this)" />
+          <img src="img-post/8.jpg" alt="post8" onclick="openModal(this)" />
+          <img src="img-post/9.jpg" alt="post9" onclick="openModal(this)" />
+          <img src="img-post/10.jpg" alt="post1" onclick="openModal(this)" />
+          <img src="img-post/11.jpg" alt="post11" onclick="openModal(this)" />
+          <img src="img-post/12.jpg" alt="post12" onclick="openModal(this)" />
+          <img src="img-post/13.jpg" alt="post13" onclick="openModal(this)" />
+          <img src="img-post/14.jpg" alt="post14" onclick="openModal(this)" />
+          <img src="img-post/15.jpg" alt="post15" onclick="openModal(this)" />
+          <img src="img-post/16.jpg" alt="post16" onclick="openModal(this)" />
+          <img src="img-post/17.jpg" alt="post17" onclick="openModal(this)" />
+          <!-- <img src="img-post/18.jpg" alt="post18" onclick="openModal(this)" /> -->
+        </div>
+        <div id="myModal" class="modal" onclick="closeModal()">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="img01" />
+        </div>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

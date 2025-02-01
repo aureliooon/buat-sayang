@@ -1,0 +1,73 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+
+
+.letter {
+    display: flex;
+    width: 954px;
+    height: 366.453px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.788);
+    transition: transform 0.5s ease-in-out;
+}
+
+.flip-book {
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+.letter p {
+    width: 400px;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.letter img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 370px;
+    margin-right: 20px;
+}
+
+.letter img,
+.letter p {
+  display: inline-block;
+  vertical-align: middle; /* Agar elemen sejajar secara vertikal */
+  margin: 0 10px; /* Jarak antara elemen */
+}
+
+.panah {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 13px;
+}
