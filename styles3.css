@@ -7,19 +7,18 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-y: hidden;
 }
 
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
-  }
-
+    overflow: hidden; /* Mencegah scroll */
+    overscroll-behavior: none; /* Hilangkan efek bouncing */
+}
 
 .letter {
     display: flex;
@@ -44,6 +43,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    touch-action: none; /* Nonaktifkan gestur sentuh */
 }
   
 .letter p {
@@ -62,8 +62,8 @@ body {
 .letter img,
 .letter p {
   display: inline-block;
-  vertical-align: middle; /* Agar elemen sejajar secara vertikal */
-  margin: 0 10px; /* Jarak antara elemen */
+  vertical-align: middle;
+  margin: 0 10px;
 }
 
 .panah {
@@ -74,8 +74,37 @@ body {
 
 @media only screen and (max-width: 768px) {
     body {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
         overflow: hidden;
-        touch-action: none;
-        overscroll-behavior: none;
+    }
+
+    .letter {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .letter img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .letter p {
+        width: 100%;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .flip-book {
+        height: auto;
+        padding: 10px;
+    }
+
+    .panah {
+        font-size: 2rem;
+        margin-top: 20px;
     }
 }
